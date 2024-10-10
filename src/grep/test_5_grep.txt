@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+char get_gnu(const char *argv);
+))
+
+int main() {
+    
+
+
+
+    char *argv = "--number";
+    printf("%c\n", id_gnu(argv));
+    return 0;
+}

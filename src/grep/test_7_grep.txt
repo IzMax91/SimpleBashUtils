@@ -1,0 +1,18 @@
+#ifndef S21_GREP_H
+#define S21_GREP_H
+#include <stdio.h>
+#include <string.h>
+
+struct flags {
+  char name;
+  int status;
+};
+
+struct template_or_file {
+  int status;
+  int position_ef;
+};
+
+void flag_definition(char flag, struct flags* all_flags);
+void open_file(int argc, char* argv[], struct flags* all_flags,
+               struct template_or_file* t_or_f);

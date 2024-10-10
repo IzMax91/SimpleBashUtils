@@ -1,0 +1,11 @@
+#include "s21_grep.h"
+
+int main(int argc, char* argv[]) {
+  struct flags all_flags[10] = {{'e', 0}, {'i', 0}, {'v', 0}, {'c', 0},
+                                {'l', 0}, {'n', 0}, {'h', 0}, {'s', 0},
+                                {'f', 0}, {'o', 0}};
+  struct template_or_file t_or_f[argc];
+  t_or_f[0].status = 0;
+
+  int template_true = 0;
+  int possible_file = 0;
